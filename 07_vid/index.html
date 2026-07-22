@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css sizing unit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width: 1920px; */
+            background-color: aqua;
+            /* box sizing se jo unwanted width hai vo hat jati hai or jo humne width enter ki hai exact utni hi jaga legi  */
+            box-sizing: border-box;
+            /* width: 100vw; */
+            width: 80vw;
+            margin: auto;
+
+
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 1920px; */
+            background-color: aqua;
+            /* box sizing se jo unwanted width hai vo hat jati hai or jo humne width enter ki hai exact utni hi jaga legi  */
+            box-sizing: border-box;
+            /* width: 100vw; */
+            width: 80vw;
+            margin: 23PX auto;
+            /* height: 80vh; */
+            min-width: 80vh;
+            font-size: 18px;
+
+        }
+
+        .container  div {
+            /* font-size: 2em; */
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid rgb(245, 2, 2);
+        }
+        .container div p{
+            border:2px solid blue;
+            width:50%;
+        }
+
+        .cont {
+            border: 2px solid black;
+            box-sizing: border-box;
+            color: blue;
+            background-color: pink;
+            font-size: 2em;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        kitne gb ka pendrdive hi talk to them say them to hey intrested in us yup you and to face peackoke and other are
+        just as zuzy as you
+    </div>
+    <div class="container">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita nisi minima, sequi repellendus in eligendi
+            quae. Tenetur accusantium similique inventore libero nostrum fugiat quam nobis eius repudiandae, sequi, quas
+            voluptatem perspiciatis asperiores quod. Ab, necessitatibus architecto.
+         <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates culpa aliquid veniam corporis cum, fugit excepturi dolor dicta aliquam inventore!
+         </p>
+        </div>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur quos sequi quidem? Quod rerum voluptate
+        laborum eius adipisci sed ea distinctio quibusdam.xime cumque repudiandae asperiores.
+
+    </div>
+    <div class="cont">
+        this is another box
+    </div>
+</body>
+
+</html>
