@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .boxes{
+
+        /* border: 2px solid black; */
+      }
+      .boxes *{
+        border: 2px solid black;
+      }
+      /* we can give any attribute, tag a command by this css . even in a group . in simple way to say that is jha par bhi ye attribute ya tag ho ye command use lag jaye*/
+      p , .box, [data-color="primary"]{
+       padding: 20px;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div data-color="primary" class="box box1">Hey i am a box 1</div>
+      <div class="box box2">Hey i am a box 2</div>
+      <div class="box box3">Hey i am a box 3</div>
+      <div class="box box4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem,
+        excepturi doloremque error cum, minus maiores aspernatur totam vitae
+        similique distinctio provident animi qui? Vitae quo laboriosam iusto
+        quod, quidem voluptatibus. Commodi officiis voluptatibus alias facere
+        odit harum eius eveniet, dolore id laborum possimus, eos numquam debitis
+        ipsam eaque inventore error a beatae. Sapiente doloribus minima
+        veritatis?
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .box:nth-child(even){
+          background-color: rgb(6, 105, 192);
+      } */
+      .boxes::before {
+        content: "Aditya Bagri is the world no.1 boxer";
+        background-color: blue;
+      }
+      .boxes::after {
+        content: "hellow bsdk";
+        background-color: brown;
+      }
+      ::selection {
+        background-color: black;
+        color: aqua;
+      }
+      .boxes::first-letter {
+        color: rgb(221, 16, 50);
+      }
+      .box::first-letter {
+        color: peru;
+        font-size: 21px;
+      }
+      input::placeholder{
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box box1">Hey i am a box 1</div>
+      <div class="box box2">Hey i am a box 2</div>
+      <div class="box box3">Hey i am a box 3</div>
+      <div class="box box4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem,
+        excepturi doloremque error cum, minus maiores aspernatur totam vitae
+        similique distinctio provident animi qui? Vitae quo laboriosam iusto
+        quod, quidem voluptatibus. Commodi officiis voluptatibus alias facere
+        odit harum eius eveniet, dolore id laborum possimus, eos numquam debitis
+        ipsam eaque inventore error a beatae. Sapiente doloribus minima
+        veritatis?
+      </div>
+    </div>
+    <label for="search">Search</label>
+    <input id="search" placeholder="search what you like" />
+  </body>
+</html>
