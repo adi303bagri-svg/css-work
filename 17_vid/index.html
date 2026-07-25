@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css float & clear</title>
+    <style>
+      .image {
+        border: 2px solid black;
+        display: flow-root;
+      }
+
+      img {
+        /* float: left; */
+        float: right;
+      }
+      .card1 {
+        border: 2px solid red;
+      }
+      .card2 {
+        /* border: 2px solid red; */
+        clear: left;
+      }
+      .card3 {
+        /* border: 2px solid red; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image">
+      <img src="hellow.webp" alt="" width="300px" />
+
+      <div class="cards">
+        <div class="card1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          accusamus at esse molestiae ad dolorum excepturi ipsum dolores
+          repellat optio.
+        </div>
+        <div class="card2">
+          ghffhjjg Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Totam, expedita quis? Odit incidunt amet fugit et nostrum praesentium
+          vitae mollitia minus nobis eligendi aspernatur enim velit in est
+          repellendus autem voluptates quis officia veniam, laudantium saepe
+          similique cupiditate molestiae? Fugit aliquid necessitatibus corrupti
+          quo. Adipisci officiis laborum maiores.
+        </div>
+        <div class="card3">da, eos ratione.</div>
+      </div>
+    </div>
+  </body>
+</html>
