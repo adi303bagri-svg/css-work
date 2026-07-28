@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css specificity</title>
+    <style>
+        * ul{
+            background-color: rgb(12, 79, 138);
+        }
+        ul li:nth-child(1){
+            background-color: aqua;
+        }
+        ul li:first-child{
+            background-color: pink;
+        }
+        .hi{
+            background-color: rgb(46, 3, 146);
+        }
+        
+        p{
+            background-color: brown;
+        }
+        a:link{
+            color: red;
+        }
+        a{
+            color: rgb(15, 201, 15);
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="hi" style="background-color: red;">Hii I am a looser</li>
+            <li>I am not enough diciplined</li>
+            <li>I talk big and do nothing</li>
+            <li>I am not a good son to my parents</li>
+            <li>My mom deserve son like negi not me</li>
+            <li>I wish i  never would have been born</li>
+        </ul>
+        <p>Hey lord plz give every happiness to my mother and brother</p>
+        <p>Take my happiness and give them to my brother</p>
+        <p>May be in another life i can pay off my sins that i commited in this life
+            <a href="https://www.google.com">google</a>
+        </p>
+    </div>
+</body>
+</html>

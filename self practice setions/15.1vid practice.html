@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Card</title>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:2rem;
+
+    background:#f3f3f3;
+
+    font-family:Arial,sans-serif;
+}
+
+.card{
+
+    width:clamp(280px, 35vw, 360px);
+
+    background:white;
+
+    border:1px solid #ddd;
+
+    border-radius:18px;
+
+    padding:1rem;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
+
+.image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:14px;
+
+    object-fit:cover;
+}
+
+.tags{
+
+    margin-top:1rem;
+}
+
+.tags span{
+
+    display:inline-block;
+
+    padding:.45rem .9rem;
+
+    border-radius:999px;
+
+    background:#dffcff;
+
+    margin-right:.5rem;
+
+    margin-bottom:.5rem;
+
+    font-size:.9rem;
+}
+
+h1{
+
+    margin-top:1rem;
+
+    font-size:clamp(
+        1.3rem,
+        2vw,
+        1.8rem
+    );
+}
+
+p{
+
+    margin-top:.8rem;
+
+    line-height:1.6;
+
+    color:#555;
+
+    font-size:1rem;
+}
+
+button{
+
+    display:block;
+
+    margin:1.5rem auto 0;
+
+    border:none;
+
+    padding:.8rem 1.4rem;
+
+    border-radius:999px;
+
+    background:#7ef9ff;
+
+    cursor:pointer;
+
+    font-size:1rem;
+}
+
+button:hover{
+
+    transform:scale(1.04);
+}
+</style>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="image">
+        <img src="exercise.jpg" alt="Lake Image">
+    </div>
+
+    <div class="tags">
+        <span>Nature</span>
+        <span>Lake</span>
+    </div>
+
+    <h1>Welcome to my island!!</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Corrupti veritatis perspiciatis nisi vero hic minima.
+    </p>
+
+    <button>Read More</button>
+
+</div>
+
+</body>
+</html>
